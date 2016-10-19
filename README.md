@@ -5,9 +5,7 @@ This repository contains all of the Arduino libraries that are supported by the 
 The following should work in any sketch:
 
 ```c
-#include <Adafruit_GFX.h>
 #include <Adafruit_MCP9808.h>
-#include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include <CapacitiveSensor.h>
 #include <EEPROM.h>

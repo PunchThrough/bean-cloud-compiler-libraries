@@ -10,7 +10,7 @@
 	protected certain sections of the code with cli()/sei() calls, for safe use by interrupts.
 	Also made the capacity, position, length, and fillError variables volatile, for safe use by interrupts.
  */
- 
+
 #ifndef ByteBuffer_h
 #define ByteBuffer_h
 
@@ -38,7 +38,7 @@ public:
 	// This method initializes the datastore of the buffer to the default size.
 	void init();
 
-	// This method resets the buffer into an original state (with no data)	
+	// This method resets the buffer into an original state (with no data)
 	void clear();
 
 	// This method resets the fillError variable to false.
@@ -53,7 +53,7 @@ public:
 
 	// Returns how much space is used in the buffer
 	int getSize();
-	
+
 	// Returns the maximum capacity of the buffer
 	int getCapacity();
 
@@ -62,10 +62,12 @@ public:
 
 	//
 	// Put methods, either a regular put in back or put in front
-	// 
+	//
 	uint8_t putInFront(byte in);
 	uint8_t put(byte in);
-	uint8_t putString(char *in);
+  
+	uint8_t putString(const char *in);
+  uint8_t putString(char *in);
 
 	void putIntInFront(int in);
 	void putInt(int in);
@@ -76,20 +78,25 @@ public:
 	void putFloatInFront(float in);
 	void putFloat(float in);
 
+  void putHex(uint8_t);
+
+  void putDec(uint8_t);
+  void putDec(int8_t);
+
 	//
 	// Get methods, either a regular get from front or from back
-	// 
+	//
 	byte get();
 	byte getFromBack();
 
 	int getInt();
 	int getIntFromBack();
 
-	long getLong();	
-	long getLongFromBack();	
+	long getLong();
+	long getLongFromBack();
 
-	float getFloat();	
-	float getFloatFromBack();	
+	float getFloat();
+	float getFloatFromBack();
 
 private:
 	byte* data;
@@ -101,4 +108,3 @@ private:
 };
 
 #endif
-
