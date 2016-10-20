@@ -17,4 +17,5 @@ The following should work in any sketch:
 #include <SparkFunISL29125.h>
 #include <SPI.h>
 #include <Wire.h>
+#include <Grove_LED_Bar.h>
 ```
