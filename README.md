@@ -17,16 +17,16 @@ This repo describes the Bean Cloud Compiler library ecosystem, and allows for co
 2. Libraries provided by [PlatformIO Library Manager](http://docs.platformio.org/en/stable/librarymanager/).
 
     We use two search terms to filter PlatformIO libraries. Additionally, we have hand picked out certain libraries that cause compilation conflicts or errors.
-    
+
     Search Terms:
-    
+
     * `platform=atmelavr`
     * `framework=arduino`
-    
+
     Libraries:
-    
+
     * [List of 867 PlatformIO Libraries supported by the Bean Cloud Compiler](https://github.com/PunchThrough/bean-cloud-compiler-libraries/blob/master/platformio-libraries.md)
-    
+
 
 3. Finally, libraries [in this repo](libraries/). These are "community" provided libraries that are not on PlatformIO and are not provide by the `bean-arduino-core`  
 
@@ -39,4 +39,5 @@ This repo describes the Bean Cloud Compiler library ecosystem, and allows for co
     #include <SoftPWM.h>
     #include <SparkFunISL29125.h>
     #include <Grove_LED_Bar.h>
+    #include <Servo.h>
     ```
