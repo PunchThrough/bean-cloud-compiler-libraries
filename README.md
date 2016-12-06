@@ -40,4 +40,7 @@ This repo describes the Bean Cloud Compiler library ecosystem, and allows for co
     #include <SparkFunISL29125.h>
     #include <Grove_LED_Bar.h>
     #include <Servo.h>
+    #include <ChainableLED.h>
+    #include <SI7021.h>
+    #include <PS2Mouse.h>
     ```
